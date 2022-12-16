@@ -13,50 +13,50 @@
   color: #fff;
 }
 
-.nav__container {
+.nav_container {
   padding: 60px;
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
 
-.nav__left {
+.nav_left {
   display: flex;
   flex-direction: column;
 }
 
-.nav__left h2 {
+.nav_left h2 {
   margin-bottom: 24px;
 } 
 
-.nav__left p {
+.nav_left p {
   line-height: 2;
 }
 
-.nav__right {
+.nav_right {
   display: flex;
   justify-content: space-between;
   padding: 0 100px;
 }
 
-.nav__right a {
+.nav_right a {
   color: #fff;
   text-decoration: none;
   font-weight: 700;
 }
 
 @media screen and (max-width: 1000px) {
-  .nav__container {
+  .nav_container {
     padding: 60px 24px;
     grid-template-columns: 1fr 1fr;
   }
 
-  .nav__right {
+  .nav_right {
     flex-direction: column;
   }
 }
 
 @media screen and (max-width: 468px) {
-  .footer__right {
+  .footer_right {
     padding: 0 16px;
   }
 }
@@ -67,68 +67,68 @@
 
 /* SMALL HERO SECTION STARTS */
 
-.hero__section {
+.hero_section {
   background: rgb(217,0,53);
   background: linear-gradient(180deg, rgba(217,0,53,1) 0%, rgba(0,46,208,1) 100%);
   padding: 0 60px;
   color: #fff;
 }
 
-.hero__wrapper {
+.hero_wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 250px;
 }
 
-.column__left {
+.column_left {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
 }
 
-.column__left h1 {
+.column_left h1 {
   font-size: 90px;
 }
 
-.column__left p {
+.column_left p {
   font-size: 16px;
   line-height: 2.3;
 }
 
-.column__right {
+.column_right {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.hero__img {
+.hero_img {
   width: 100%;
   height: 100%;
 }
 
 /* Media Queries */
 @media screen and (max-width: 1100px) {
-  .hero__section {
+  .hero_section {
     padding: 30px;
   }
 
-  .hero__wrapper {
+  .hero_wrapper {
     grid-template-columns: 1fr;
   }
 
-  .column__left h1 {
+  .column_left h1 {
     font-size: 80px;
   }
 }
 
 @media screen and (max-width: 468px) {
-  .hero__wrapper {
+  .hero_wrapper {
     grid-template-rows: 600px;
   }
 
-  .column__left h1 {
+  .column_left h1 {
     font-size: 32px;
   }
 }
@@ -136,79 +136,79 @@
 /* HERO SECTION ENDS */
 
 
-.main__section {
+.main_section {
   padding: 60px 60px;
   background: #002ed0;
   color: #fff;
 }
 
-.main__container {
+.main_container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
-.main__container h1 {
+.main_container h1 {
   font-size: 110px;
   color: white;
   margin-bottom: 32px;
 }
 
-.main__content {
+.main_content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 700px;
 }
 
-.main__text {
+.main_text {
   padding-right: 20px;
 }
 
-.main__text h2 {
+.main_text h2 {
   font-size: 48px;
   line-height: 1.5;
   margin-bottom: 32px;
 }
 
-.main__text p {
+.main_text p {
   line-height: 2.3;
 }
 
-.main__image {
+.main_image {
   display: flex;
   justify-content: center;
 }
 
-.main__img {
+.main_img {
   width: 420px;
   height: 610px;
 }
 
 /* Media Queries */
 @media screen and (max-width: 1000px) {
-  .main__section {
+  .main_section {
     padding: 30px;
   }
-  .main__content {
+  .main_content {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
 
-  .main__image {
+  .main_image {
     margin-top: 40px;
   }
 
-  .main__container h1 {
+  .main_container h1 {
     font-size: 70px;
   }
 }
 
 @media screen and (max-width: 468px) {
-  .main__text h2 {
+  .main_text h2 {
     font-size: 32px;
   }
 
-  .main__img {
+  .main_img {
     width: 100%;
     height: 100%;
   }
@@ -224,80 +224,81 @@
   position: relative;
 }
 
-.services__container {
+.services_container {
   background: #000;
   padding-top: 100px;
   padding-bottom: 100px;
   padding-left: 60px;
 }
 
-.services__grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 700px;
+.services_flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: relative;
 }
 
-.services__container h1 {
+.services_container h1 {
   font-size: 50px;
 }
 
-.services__left {
+.services_left {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   padding: 0 50px;
 }
 
-.services__content {
+.services_content {
   display: flex;
   align-items: flex-start;
 }
 
-.services__content img {
+.services_content img {
   margin-right: 50px;
 }
 
-.services__desc h2 {
+.services_desc h2 {
   font-size: 16px;
   text-transform: uppercase;
   margin-bottom: 16px;
 }
 
-.services__desc p {
+.services_desc p {
   line-height: 2;
 }
 
 
 @media screen and (max-width: 468px) {
-  .services__container {
+  .services_container {
     padding-top: 100px;
     padding-bottom: 160px;
     padding-left: 16px;
+   
   }
 
-  .services__grid {
+  .services_grid {
     grid-template-columns: 1fr;
     grid-template-rows: 900px;
   }
 
-  .services__container h1 {
+  .services_container h1 {
     text-align: center;
     margin-bottom: 100px;
   }
 
-  .services__left {
+  .services_left {
     padding: 0 24px;
   }
 
-  .services__content {
+  .services_content {
     margin-top: 40px;
   }
 
-  .services__content img {
+  .services_content img {
     margin-right: 16px;
   }
-
-  .contact_bar img {
+ 
+.contact_bar img {
     margin: 0 20px;
   }
 
@@ -315,57 +316,57 @@
   color: #fff;
 }
 
-.portfolio__container {
+.portfolio_container {
   padding-top: 100px;
   padding-bottom: 100px;
   padding-left: 60px;
 }
 
-.portfolio__container h1 {
+.portfolio_container h1 {
   font-size: 110px;
   color: white;
 
   margin-bottom: 32px;
 }
 
-.portfolio__main {
+.portfolio_main {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.portfolio__img {
+.portfolio_img {
   padding-bottom: 30px;
   height: 100%;
   width: 100%;
 }
 
-.portfolio__right {
+.portfolio_right {
   padding: 50px 100px 50px 20px;
 }
 
-.portfolio__right h2 {
+.portfolio_right h2 {
   margin-bottom: 40px;
   font-size: 30px;
 }
 
-.portfolio__right p {
+.portfolio_right p {
   margin-bottom: 50px;
   line-height: 2.5;
 }
 
-.portfolio__right a {
+.portfolio_right a {
   color: #fff;
   text-decoration: none;
 }
 
-.portfolio__projects {
+.portfolio_projects {
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding: 32px 64px;
 }
 
-.portfolio__projects img {
+.portfolio_projects img {
   padding: 8px 8px;
   width: 650px;
   height: 100%;
@@ -373,7 +374,7 @@
 
 /* Media Queries */
 @media screen and (max-width: 1368px) {
-  .portfolio__projects {
+  .portfolio_projects {
     flex-direction: column;
   }
 }
@@ -382,19 +383,19 @@
     padding: 30px;
   }
 
-  .portfolio__container h1 {
+  .portfolio_container h1 {
     font-size: 70px;
   }
 
-  .portfolio__main {
+  .portfolio_main {
     grid-template-columns: 1fr;
   }
 
-  .portfolio__container {
+  .portfolio_container {
     padding-left: 0px;
   }
 
-  .portfolio__right {
+  .portfolio_right {
     margin-bottom: 60px;
   }
 }
@@ -404,7 +405,7 @@
     padding: 10px;
   }
 
-  .portfolio__container h1 {
+  .portfolio_container h1 {
     font-size: 40px;
   }
 }
@@ -420,7 +421,7 @@
   padding: 100px 0;
 }
 
-.contact__bar {
+.contact_bar {
   background: #D90035;
   height: 80px;
   width: 68%;
@@ -430,16 +431,16 @@
   align-items: center;
 }
 
-.contact__bar img {
+.contact_bar img {
   margin-right: 40px;
 }
 
-.contact__bar p {
+.contact_bar p {
   margin-right: 40px;
   font-weight: 700;
 }
 
-.contact__bar span {
+.contact_bar span {
   margin-right: 40px;
 }
 
@@ -454,21 +455,21 @@
     flex-direction: column;
   }
 
-  .contact__bar {
+  .contact_bar {
     width: 100%;
     justify-content: center;
   }
 
-  .contact__bar img {
+  .contact_bar img {
     margin-left: 16px;
     margin-right: 16px;
   }
 
-  .contact__bar p {
+  .contact_bar p {
     margin-right: 16px;
   }
 
-  .contact__bar span {
+  .contact_bar span {
     font-size: 16px;
   }
 
@@ -488,21 +489,21 @@
   color: #fff;
 }
 
-.footer__container {
+.footer_container {
   padding: 60px;
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
 
-.footer__left {
+.footer_left {
   display: flex;
   flex-direction: column;
 }
 
-.footer__left h2 {
+.footer_left h2 {
   margin-bottom: 24px;
 }
 
-.footer__left p {
+.footer_left p {
   line-height: 2;
 }
